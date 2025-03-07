@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Counter from "../components/Counter";
 import Form from "../components/Form";
-import { motion } from "framer-motion";
 import Loading from "../components/Loading";
+import { motion } from "framer-motion";
 
 export default function HomePage() {
     const [todos, setTodos] = useState({});
@@ -26,6 +26,8 @@ export default function HomePage() {
             }, 300);
         }
     }
+
+
 
     useEffect(() => {
         todo();
