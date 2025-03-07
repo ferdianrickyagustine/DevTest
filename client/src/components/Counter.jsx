@@ -26,7 +26,22 @@ export default function Form() {
 
     return (
         <div>
-            <motion.label initial={{ x: -200, y: 100 }} animate={{ x: 0, y: 0 }} whileHover={{ scale: 1.1, backgroundColor: "#ff2994" }} transition={{ duration: 0.5, y: { duration: 2 }, x: { duration: 1.8 } }} htmlFor="my_modal_7" className="btn h-auto w-full p-5">Component Creation and State Management</motion.label>
+            <motion.label
+                initial={{ x: -300 }}
+                animate={{ x: 0 }}
+                whileHover={{ scale: 1.1, backgroundColor: "#ff2994" }}
+                transition={{ duration: 0.5, x: { duration: 1.8 }}}
+                htmlFor="my_modal_7"
+                className="block md:hidden btn h-auto w-full p-5">Component Creation and State Management
+            </motion.label>
+            <motion.label
+                initial={{ x: -200, y: 100 }}
+                animate={{ x: 0, y: 0 }}
+                whileHover={{ scale: 1.1, backgroundColor: "#ff2994" }}
+                transition={{ duration: 0.5, y: { duration: 2 }, x: { duration: 1.8 } }}
+                htmlFor="my_modal_7"
+                className="hidden md:block btn h-auto w-full p-5">Component Creation and State Management
+            </motion.label>
             <input type="checkbox" id="my_modal_7" className="modal-toggle" />
             <div className="modal" role="dialog">
                 <div className="modal-box bg-black/80">
