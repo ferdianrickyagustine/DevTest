@@ -27,23 +27,49 @@ export default function HomePage() {
         }
     }
 
-
-
     useEffect(() => {
         todo();
     }, []);
 
     return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="bg-gray-200 min-h-screen w-full flex items-center justify-center p-4">
-            <div className="flex flex-col items-center gap-4">
+        <motion.div 
+            animate={{ opacity: 1, backgroundColor: "#ffffff" }} 
+            transition={{ duration: 5.5 }} 
+            className="bg-black min-h-screen w-full flex items-center justify-center p-4">
+
+            <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-5 md:gap-20">
+
                 {isLoading ? (
-                    <Loading />
+                    <div className="col-span-3 flex justify-center items-center relative z-10">
+                        <Loading />
+                    </div>
                 ) : (
                     <>
-                        <Counter />
-                        <Form />
-                        <div className="text-black">
-                            {todos.title}
+                        <div className="w-full flex flex-col">
+                            <motion.span
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 1.8, duration: 1.8 }}
+                                className="text-2xl text-black text-center mb-5">Counter</motion.span>
+                            <Counter />
+                        </div>
+                        <div className="w-full flex flex-col">
+                            <motion.span
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 1.8, duration: 1.8 }}
+                                className="text-2xl text-black text-center mb-5">Form</motion.span>
+                            <Form />
+                        </div>
+                        <div className="w-full flex flex-col">
+                            <motion.span
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 1.8, duration: 1.8 }}
+                                className="text-2xl text-black text-center mb-5">Fetch</motion.span>
+                            <motion.div className="text-white bg-[#181d23] rounded-lg p-5 text-center w-full overflow-hidden" initial={{ x: 200, y: 100 }} animate={{ x: 0, y: 0 }} whileHover={{ scale: 1.1, backgroundColor: "#ff2994" }} transition={{ duration: 0.5, y: { duration: 1.8 }, x: { duration: 1.8 } }}>
+                                title: {todos.title}
+                            </motion.div>
                         </div>
                     </>
                 )}
