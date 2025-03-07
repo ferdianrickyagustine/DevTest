@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { toast } from 'react-toastify';
+import { motion } from "framer-motion";
 
 export default function Form() {
     const [name, setName] = useState("");
@@ -31,10 +32,9 @@ export default function Form() {
         setPassword("");
         setConfirmPassword("");
     }
-
     return (
         <div>
-            <label htmlFor="modal-1" className="btn modal-button">Form Handling and Validation</label>
+            <motion.label initial={{ y: -100 }} animate={{ y: 0 }} whileHover={{ scale: 1.1, backgroundColor: "#ff2994" }} transition={{ duration: 0.5, y: { duration: 1.8 } }} htmlFor="modal-1" className="btn modal-button">Form Handling and Validation</motion.label>
             <input type="checkbox" id="modal-1" className="modal-toggle" />
             <div className="modal">
                 <div className="modal-box bg-black/80">

@@ -5,7 +5,7 @@ export default function Navbar() {
     const [selected, setSelected] = useState("Home");
 
     return (
-        <nav className="sticky top-0 bg-gray-800 p-4">
+        <nav className="sticky top-0 bg-gray-800 p-4 z-50">
             <div className="container mx-auto flex justify-center items-center">
                 <ul className="flex space-x-4">
                     <li>
