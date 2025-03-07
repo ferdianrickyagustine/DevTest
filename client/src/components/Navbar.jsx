@@ -1,16 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router";
 
 export default function Navbar() {
+    const [selected, setSelected] = useState("Home");
+
     return (
         <nav className="sticky top-0 bg-gray-800 p-4">
-            <div className="container mx-auto flex justify-between items-center">
-                <Link to="/" className="text-white text-2xl">DevTest</Link>
+            <div className="container mx-auto flex justify-center items-center">
                 <ul className="flex space-x-4">
                     <li>
-                        <Link href="/" className="text-white">Home</Link>
+                        <Link to="/" onClick={() => setSelected("Home")} className={selected === "Home" ? "text-white bg-red-500/70 p-2 rounded-md" : "text-white hover:bg-red-500/70 delay-150 duration-300 ease-in-out p-2 rounded-md"}>Home</Link>
                     </li>
                     <li>
-                        <Link href="/about" className="text-white">About</Link>
+                        <Link to="/about" onClick={() => setSelected("About")} className={selected === "About" ? "text-white bg-red-500/70 p-2 rounded-md" : "text-white hover:bg-red-500/70 delay-150 duration-300 ease-in-out p-2 rounded-md"}>About</Link>
                     </li>
                 </ul>
             </div>
