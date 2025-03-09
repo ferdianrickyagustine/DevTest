@@ -44,7 +44,7 @@ export default function Form() {
                 className="block md:hidden btn modal-button h-auto p-5 w-full">Form Handling and Validation
             </motion.label>
             <motion.label
-                initial={{ y: 100, opacity: 0, backgroundColor: "#387478" }}
+                initial={{ y: 40, opacity: 0, backgroundColor: "#387478" }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.1, backgroundColor: "#13BD9C" }}
