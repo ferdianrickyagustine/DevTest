@@ -13,7 +13,7 @@ export default function AboutPage() {
 
   return (
     <motion.div
-      animate={{ opacity: 1, backgroundColor: ["#CBF1F5", "#A6E3E9", "#71C9CE", "#A6E3E9", "#CBF1F5"] }}
+      animate={{ opacity: 1, backgroundColor: ["#243642", "#387478", "#387478", "#243642"] }}
       transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
       className="bg-white min-h-screen w-full flex flex-col items-center justify-center">
       {isLoading ? (
@@ -22,7 +22,7 @@ export default function AboutPage() {
         </div>
       ) : (
         <motion.div
-          className="max-w-sm max-h-sm flex flex-col justify-center items-center text-black bg-black/50 rounded-lg p-20 text-white/90 cursor-pointer"
+          className="max-w-sm max-h-sm flex flex-col justify-center items-center bg-black/50 border border-[#13BD9C] rounded-lg p-20 text-white/90 cursor-pointer"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.8 }}

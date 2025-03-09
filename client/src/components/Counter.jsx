@@ -27,20 +27,20 @@ export default function Form() {
     return (
         <div>
             <motion.label
-                initial={{ x: -300, opacity: 0 }}
+                initial={{ x: -50, opacity: 0, backgroundColor: "#387478" }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.1, backgroundColor: "#ff2994" }}
+                whileHover={{ scale: 1.1, backgroundColor: "#13BD9C" }}
                 transition={{ delay: 0.2, duration: 0.5, x: { duration: 1.8 } }}
                 htmlFor="my_modal_7"
                 className="block md:hidden btn h-auto w-full p-5">Component Creation and State Management
             </motion.label>
             <motion.label
-                initial={{ x: -200, y: 100, opacity: 0 }}
-                whileInView={{ x: 0, y: 0, opacity: 1 }}
+                initial={{ y: 40, opacity: 0, backgroundColor: "#387478" }}
+                whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.1, backgroundColor: "#ff2994" }}
-                transition={{ delay: 0.2, duration: 0.5, y: { duration: 2 }, x: { duration: 1.8 } }}
+                whileHover={{ scale: 1.1, backgroundColor: "#13BD9C" }}
+                transition={{ delay: 0.2, duration: 0.5, y: { duration: 2 } }}
                 htmlFor="my_modal_7"
                 className="hidden md:block btn h-auto w-full p-5">Component Creation and State Management
             </motion.label>
