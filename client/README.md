@@ -1,12 +1,35 @@
-# React + Vite
+## Cara Menjalankan Aplikasi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Prerequisites
+- Node.js versi 18.0.0 atau lebih baru
+- npm versi 9.0.0 atau lebih baru
 
-Currently, two official plugins are available:
+### Langkah-langkah
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone repository ini
+```bash
+git clone [url-repository]
+cd [nama-folder]
+```
 
-## Expanding the ESLint configuration
+2. Install dependencies
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Jalankan aplikasi dalam mode development
+```bash
+npm run dev
+```
+
+4. Buka browser dan akses aplikasi di [http://localhost:5173](http://localhost:5173)
+
+## Yang saya gunakan:
+- React 19
+- Vite
+- JavaScript
+- Tailwind CSS
+- DaisyUI
+- Framer Motion
+- React Router
+- React Toastify
