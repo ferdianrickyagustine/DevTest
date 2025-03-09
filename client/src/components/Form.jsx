@@ -35,18 +35,20 @@ export default function Form() {
     return (
         <div>
             <motion.label
-                initial={{ x: -300 }}
-                animate={{ x: 0 }}
+                initial={{ x: -300, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
                 whileHover={{ scale: 1.1, backgroundColor: "#ff2994" }}
-                transition={{ duration: 0.5, x: { duration: 1.8 } }}
+                transition={{ delay: 0.2, duration: 0.5, x: { duration: 1.8 } }}
                 htmlFor="modal-1"
                 className="block md:hidden btn modal-button h-auto p-5 w-full">Form Handling and Validation
             </motion.label>
             <motion.label
-                initial={{ y: -100 }}
-                animate={{ y: 0 }}
+                initial={{ y: -100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
                 whileHover={{ scale: 1.1, backgroundColor: "#ff2994" }}
-                transition={{ duration: 0.5, y: { duration: 1.8 } }}
+                transition={{ delay: 0.2, duration: 0.5, y: { duration: 1.8 } }}
                 htmlFor="modal-1"
                 className="hidden md:block btn modal-button h-auto p-5 w-full">Form Handling and Validation
             </motion.label>
