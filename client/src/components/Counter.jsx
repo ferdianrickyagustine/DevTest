@@ -36,11 +36,11 @@ export default function Form() {
                 className="block md:hidden btn h-auto w-full p-5">Component Creation and State Management
             </motion.label>
             <motion.label
-                initial={{ y: 40, opacity: 0, backgroundColor: "#387478" }}
+                initial={{ y: 100, opacity: 0, backgroundColor: "#387478" }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.1, backgroundColor: "#13BD9C" }}
-                transition={{ delay: 0.2, duration: 0.5, y: { duration: 2 } }}
+                transition={{ delay: 0.2, duration: 0.5, y: { duration: 1.8 } }}
                 htmlFor="my_modal_7"
                 className="hidden md:block btn h-auto w-full p-5">Component Creation and State Management
             </motion.label>
